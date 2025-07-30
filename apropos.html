@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>À Propos - FashionStore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><i class="fas fa-tshirt mr-2"></i>FashionStore</a>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="apropos.html" class="active">À propos</a>
+                <a href="contact.html">Contact</a>
+                <div class="cart-icon" onclick="toggleCart()">
+                    <i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span>
+                </div>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="hero-content">
+                <h1 data-aos="fade-down">Notre Histoire</h1>
+                <p data-aos="fade-up" data-aos-delay="200">Découvrez l'univers FashionStore</p>
+            </div>
+        </section>
+
+        <!-- Notre Histoire -->
+        <section class="our-story">
+            <div class="container">
+                <div class="story-content" data-aos="fade-right">
+                    <h2 class="section-title">Qui Sommes-Nous ?</h2>
+                    <p>Fondée en 2015 à Paris, FashionStore est née d'une passion commune pour la mode accessible et de qualité. Ce qui a commencé comme une petite boutique en ligne est rapidement devenu une référence dans le secteur de la mode e-commerce.</p>
+                    <p>Notre mission est simple : proposer des vêtements tendance à des prix justes, sans compromis sur la qualité ou l'éthique de production.</p>
+                </div>
+                <div class="story-image" data-aos="fade-left">
+                    <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Notre équipe">
+                </div>
+            </div>
+        </section>
+
+        <!-- Nos Valeurs -->
+        <section class="our-values">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Nos Valeurs</h2>
+                
+                <div class="values-grid">
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="value-icon">
+                            <i class="fas fa-leaf"></i>
+                        </div>
+                        <h3>Durabilité</h3>
+                        <p>Nous sélectionnons des matériaux écologiques et promouvons une mode responsable avec des collections durables.</p>
+                    </div>
+
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="value-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h3>Qualité</h3>
+                        <p>Chaque pièce est soigneusement conçue pour allier confort, style et résistance dans le temps.</p>
+                    </div>
+
+                    <div class="value-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Inclusion</h3>
+                        <p>Nous croyons en une mode pour tous, avec des tailles étendues et des designs universels.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notre Équipe -->
+        <section class="our-team">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Rencontrez Notre Équipe</h2>
+                
+                <div class="team-grid">
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="100">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Sophie Martin">
+                        </div>
+                        <h3>Sophie Martin</h3>
+                        <p class="position">Directrice Artistique</p>
+                        <p class="bio">"La mode est un langage qui crée en soi des histoires avant même que vous ne parliez."</p>
+                    </div>
+
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="200">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Thomas Leblanc">
+                        </div>
+                        <h3>Thomas Leblanc</h3>
+                        <p class="position">Responsable Design</p>
+                        <p class="bio">"Chaque vêtement raconte une histoire. Mon travail est de s'assurer que c'est une belle histoire."</p>
+                    </div>
+
+                    <div class="team-member" data-aos="fade-up" data-aos-delay="300">
+                        <div class="member-image">
+                            <img src="https://images.unsplash.com/photo-1573497620053-ea5300f94f21?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Amélie Dubois">
+                        </div>
+                        <h3>Amélie Dubois</h3>
+                        <p class="position">Responsable Clientèle</p>
+                        <p class="bio">"Votre satisfaction est notre priorité absolue. Nous sommes là pour vous guider."</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chiffres Clés -->
+        <section class="key-numbers">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">FashionStore en Chiffres</h2>
+                
+                <div class="numbers-grid">
+                    <div class="number-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="number" data-count="15000">0</div>
+                        <p>Clients satisfaits</p>
+                    </div>
+
+                    <div class="number-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="number" data-count="8">0</div>
+                        <p>Ans d'expérience</p>
+                    </div>
+
+                    <div class="number-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="number" data-count="500">0</div>
+                        <p>Articles disponibles</p>
+                    </div>
+
+                    <div class="number-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="number" data-count="98">0</div>
+                        <p>Taux de satisfaction</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="about-cta">
+            <div class="container" data-aos="fade-up">
+                <h2>Prêt à rejoindre l'aventure FashionStore ?</h2>
+                <p>Découvrez notre collection et faites partie de notre communauté</p>
+                <div class="cta-buttons">
+                    <a href="index.html" class="btn-primary">Voir la collection</a>
+                    <a href="contact.html" class="btn-secondary">Nous contacter</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FashionStore</h3>
+                <p>Votre boutique de mode en ligne premium</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@fashionstore.com</p>
+                <p><i class="fas fa-phone"></i> +221 77 245 50 15</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FashionStore. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <h2>Votre Panier</h2>
+            <div id="cartItems"></div>
+            <div id="cartTotal">Total: 0.00€</div>
+            <button onclick="checkout()" class="btn-primary">Commander</button>
+            <button onclick="toggleCart()" class="btn-secondary">Fermer</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialisation AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out'
+        });
+
+        // Animation des chiffres
+        function animateNumbers() {
+            const numberElements = document.querySelectorAll('.number');
+            
+            numberElements.forEach(element => {
+                const target = parseInt(element.getAttribute('data-count'));
+                const duration = 2000;
+                const start = 0;
+                const increment = target / (duration / 16);
+                let current = start;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        clearInterval(timer);
+                        current = target;
+                    }
+                    element.textContent = Math.floor(current);
+                }, 16);
+            });
+        }
+
+        // Déclencher l'animation lorsque la section est visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateNumbers();
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        const numbersSection = document.querySelector('.key-numbers');
+        if (numbersSection) {
+            observer.observe(numbersSection);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Services - FashionStore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><i class="fas fa-tshirt mr-2"></i>FashionStore</a>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="services.html" class="active">Services</a>
+                <a href="apropos.html">À propos</a>
+                <a href="contact.html">Contact</a>
+                <div class="cart-icon" onclick="toggleCart()">
+                    <i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span>
+                </div>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="services-main">
+        <!-- Section Hero -->
+        <section class="services-hero">
+            <div class="hero-content">
+                <h1 data-aos="fade-down">Nos Services Exclusifs</h1>
+                <p data-aos="fade-up" data-aos-delay="200">Découvrez comment nous rendons votre expérience shopping unique</p>
+            </div>
+        </section>
+
+        <!-- Services Principaux -->
+        <section class="main-services">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Ce que nous vous offrons</h2>
+                
+                <div class="services-grid">
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="service-icon">
+                            <i class="fas fa-truck-fast"></i>
+                        </div>
+                        <h3>Livraison Express</h3>
+                        <ul>
+                            <li>Livraison en 24h en région parisienne</li>
+                            <li>48h partout en France</li>
+                            <li>Suivi en temps réel</li>
+                            <li>Emballage premium</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="service-icon">
+                            <i class="fas fa-undo-alt"></i>
+                        </div>
+                        <h3>Retours Faciles</h3>
+                        <ul>
+                            <li>30 jours pour changer d'avis</li>
+                            <li>Retours gratuits</li>
+                            <li>Process simplifié</li>
+                            <li>Remboursement express</li>
+                        </ul>
+                    </div>
+
+                    <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="service-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h3>Conseils Mode</h3>
+                        <ul>
+                            <li>Stylistes diplômés</li>
+                            <li>Consultation gratuite</li>
+                            <li>Conseils personnalisés</li>
+                            <li>Création de looks</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services Additionnels -->
+        <section class="extra-services">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Services Premium</h2>
+                
+                <div class="service-features">
+                    <div class="feature" data-aos="fade-right">
+                        <div class="feature-icon">
+                            <i class="fas fa-gem"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Programme Fidélité</h3>
+                            <p>Bénéficiez d'avantages exclusifs : réduction de 10% après 5 commandes, accès anticipé aux soldes, invitations privées et cadeaux surprises.</p>
+                            <a href="#" class="btn-secondary">En savoir plus</a>
+                        </div>
+                    </div>
+
+                    <div class="feature" data-aos="fade-left">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-screen"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h3>Essayage Virtuel</h3>
+                            <p>Utilisez notre technologie AR pour essayer les vêtements virtuellement avant achat. Compatible smartphone et tablette.</p>
+                            <a href="#" class="btn-secondary">Tester maintenant</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="section-title" data-aos="fade-up">Questions Fréquentes</h2>
+                
+                <div class="faq-grid">
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question">
+                            <h3>Quels sont les délais de livraison ?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Nous proposons plusieurs options : Livraison standard (3-5 jours ouvrables), Express (24-48h) et Point Relais (2-3 jours). Les délais exacts dépendent de votre localisation.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question">
+                            <h3>Comment fonctionnent les retours ?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Connectez-vous à votre compte, sélectionnez les articles à retourner, imprimez l'étiquette prépayée et déposez le colis dans un point relais. Le remboursement est traité sous 48h après réception.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item" data-aos="fade-up">
+                        <div class="faq-question">
+                            <h3>Puis-je modifier ma commande ?</h3>
+                            <i class="fas fa-chevron-down"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Oui, tant que votre commande n'a pas été expédiée. Contactez notre service client par chat ou téléphone pour toute modification.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="service-cta">
+            <div class="container" data-aos="fade-up">
+                <h2>Prêt à profiter de nos services ?</h2>
+                <p>Rejoignez des milliers de clients satisfaits</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn-primary">Nous contacter</a>
+                    <a href="index.html" class="btn-secondary">Voir la collection</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FashionStore</h3>
+                <p>Votre boutique de mode en ligne premium</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="about.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p><i class="fas fa-envelope"></i> contact@fashionstore.com</p>
+                <p><i class="fas fa-phone"></i> +221 77 245 50 15</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FashionStore. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <h2>Votre Panier</h2>
+            <div id="cartItems"></div>
+            <div id="cartTotal">Total: 0.00€</div>
+            <button onclick="checkout()" class="btn-primary">Commander</button>
+            <button onclick="toggleCart()" class="btn-secondary">Fermer</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialisation AOS
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out'
+        });
+
+        // Gestion FAQ
+        document.querySelectorAll('.faq-question').forEach(question => {
+            question.addEventListener('click', () => {
+                const answer = question.nextElementSibling;
+                const icon = question.querySelector('i');
+                
+                answer.classList.toggle('active');
+                icon.classList.toggle('rotate');
+                
+                // Fermer les autres réponses
+                document.querySelectorAll('.faq-answer').forEach(otherAnswer => {
+                    if (otherAnswer !== answer && otherAnswer.classList.contains('active')) {
+                        otherAnswer.classList.remove('active');
+                        otherAnswer.previousElementSibling.querySelector('i').classList.remove('rotate');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

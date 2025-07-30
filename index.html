@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FashionStore - Boutique de Mode</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><i class="fas fa-tshirt mr-2"></i>FashionStore</a>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="about.html">À propos</a>
+                <a href="contact.html">Contact</a>
+                <div class="cart-icon" onclick="toggleCart()">
+                    <i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span>
+                </div>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Collection Automne-Hiver 2025</h1>
+                <p>Découvrez notre nouvelle collection exclusive</p>
+                <a href="#featured" class="btn-primary">Explorer</a>
+            </div>
+        </section>
+
+        <section id="featured" class="featured-products">
+            <h2 class="section-title">Nos Produits Phares</h2>
+            <div class="products-grid">
+                <!-- Produits chargés dynamiquement via JavaScript -->
+            </div>
+        </section>
+
+        <section class="about-preview">
+            <div class="about-content animate__animated animate__fadeIn">
+                <h2 class="philosophy-title">Notre Philosophie</h2>
+                <p class="philosophy-text">FashionStore croit en une mode accessible, durable et inclusive pour tous.</p>
+                <a href="apropos.html" class="btn-secondary btn-philosophy">
+                    En savoir plus 
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z"/>
+                    </svg>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>FashionStore</h3>
+                <p>Votre boutique de mode en ligne premium</p>
+            </div>
+            <div class="footer-section">
+                <h3>Liens rapides</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="apropos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact</h3>
+                <p>contact@fashionstore.com</p>
+                <p>+221 77 245 50 15</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 FashionStore. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <h2>Votre Panier</h2>
+            <div id="cartItems"></div>
+            <div id="cartTotal">Total: 0.00€</div>
+            <button onclick="checkout()" class="btn-primary">Commander</button>
+            <button onclick="toggleCart()" class="btn-secondary">Fermer</button>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+        // Initialisation des produits
+        document.addEventListener('DOMContentLoaded', function() {
+            displayProducts();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - FashionStore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#" class="logo"><i class="fas fa-tshirt mr-2"></i>FashionStore</a>
+            <div class="nav-links">
+                <a href="index.html">Accueil</a>
+                <a href="services.html">Services</a>
+                <a href="apropos.html">À propos</a>
+                <a href="contact.html" class="active">Contact</a>
+                <div class="cart-icon" onclick="toggleCart()">
+                    <i class="fas fa-shopping-cart"></i> <span class="cart-count">0</span>
+                </div>
+            </div>
+            <div class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-main">
+        <section class="contact-hero">
+            <h1>Contactez-Nous</h1>
+            <p>Nous sommes à votre écoute pour toute question</p>
+        </section>
+
+        <section class="contact-section">
+            <div class="contact-form" data-aos="fade-right">
+                <h2>Envoyez-nous un message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Nom complet</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Sujet</label>
+                        <input type="text" id="subject">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Envoyer</button>
+                </form>
+                <div id="formNotification" class="notification"></div>
+            </div>
+
+            <div class="contact-info" data-aos="fade-left">
+                <h2>Nos Coordonnées</h2>
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>123 Avenue de la Mode, 75000 Paris</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone-alt"></i>
+                    <p>+221 77 245 50 15</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>contact@fashionstore.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-clock"></i>
+                    <p>Lundi-Vendredi: 9h-19h<br>Samedi: 10h-18h</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+          <div class="footer-section">
+              <h3>FashionStore</h3>
+              <p>Votre boutique de mode en ligne premium</p>
+          </div>
+          <div class="footer-section">
+              <h3>Liens rapides</h3>
+              <ul>
+                  <li><a href="index.html">Accueil</a></li>
+                  <li><a href="services.html">Services</a></li>
+                  <li><a href="apropos.html">À propos</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+              </ul>
+          </div>
+          <div class="footer-section">
+              <h3>Contact</h3>
+              <p>contact@fashionstore.com</p>
+              <p>+221 77 245 50 15</p>
+          </div>
+      </div>
+      <div class="footer-bottom">
+          <p>&copy; 2025 FashionStore. Tous droits réservés.</p>
+      </div>
+  </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+    <script>
+        AOS.init();
+        
+        // Gestion du formulaire de contact
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const notification = document.getElementById('formNotification');
+            notification.textContent = "Merci pour votre message! Nous vous répondrons sous 48h.";
+            notification.classList.add('success');
+            this.reset();
+            
+            setTimeout(() => {
+                notification.textContent = '';
+                notification.classList.remove('success');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
